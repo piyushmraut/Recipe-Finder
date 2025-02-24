@@ -590,14 +590,14 @@ function Home() {
                 {isFavorite(recipe.id) ? (
                   <FaHeart className="text-red-500 text-2xl" />
                 ) : (
-                  <FaRegHeart className="text-gray-500 text-2xl" />
+                  <FaRegHeart className="text-red-500 text-2xl" />
                 )}
               </div>
             </div>
           ))}
         </div>
         <div className='bg-red-300'>
-          
+
         </div>
       </div>
     </div>
