@@ -24,12 +24,12 @@ import React from 'react'
 function Hero({ search, setSearch }) {
   return (
     <div
-      className="relative bg-cover bg-center h-96 flex items-center justify-center"
+      className="relative bg-cover bg-center h-96 flex items-center justify-center mt-3"
       style={{
         backgroundImage: `url('https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
       }}
     >
-      <div className="bg-red-50 bg-opacity-70 p-2 rounded-lg shadow-lg w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3">
+      <div className="bg-red-200 bg-opacity-70 p-2 rounded-lg shadow-lg w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3">
         <input
           type="text"
           placeholder="Search for recipes based on ingredients..."

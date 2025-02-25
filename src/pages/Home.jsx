@@ -531,7 +531,7 @@ function Home() {
     if (!search) return;
     try {
       const response = await fetch(
-        `https://api.spoonacular.com/recipes/complexSearch?query=${search}&apiKey=777918ec0c9f41fa9f163fb33808d265`
+        `https://api.spoonacular.com/recipes/complexSearch?query=${search}&apiKey=97bec6b1b7e84bc787a954aeaa080133`
       );
       const data = await response.json();
       setRecipes(data.results);
@@ -560,7 +560,7 @@ function Home() {
   const isFavorite = (id) => favorites.some((fav) => fav.id === id);
 
   return (
-    <div>
+    <div className='m-5'>
       <Navbar />
       <Hero search={search} setSearch={setSearch} />
       <div className="p-4">
