@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes sparkle {
+    0%, 100% { text-shadow: 0 0 1px #fff, 0 0 1px #f0f, 0 0 2px #f0f, 0 0 3px #f0f; }
+    50% { text-shadow: 0 0 1px #ff0, 0 0 2px #ff0, 0 0 4px #ff0, 0 0 15px #ff0; }
+  }
