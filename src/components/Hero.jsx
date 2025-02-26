@@ -1,26 +1,5 @@
 import React from 'react'
 
-// function Hero({ search, setSearch }) {
-//   return (
-//     <div
-//       className="relative bg-cover bg-center h-96 flex items-center justify-center"
-//       style={{
-//         backgroundImage: `url('https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
-//       }}
-//     >
-//       <div className="bg-red-50 bg-opacity-70 p-2 rounded-sm shadow-lg">
-//         <input
-//           type="text"
-//           placeholder="Search for recipes based on ingredients..."
-//           value={search}
-//           onChange={(e) => setSearch(e.target.value)}
-//           className="p-1 w-96 rounded-sm focus:outline-none"
-//         />
-//       </div>
-//     </div>
-//   );
-// }
-
 function Hero({ search, setSearch }) {
   return (
     <div

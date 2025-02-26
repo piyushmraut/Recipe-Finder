@@ -3,49 +3,6 @@ import { Link } from 'react-router-dom';
 import { AiOutlineUnorderedList } from 'react-icons/ai';
 import { useState } from 'react';
 
-// function Navbar() {
-//     return (
-//         <nav className="bg-[#540c97] text-white p-4 flex justify-between items-center">
-//           <h1 className="text-xl font-bold"> 😋Recipe Finder</h1>
-//           <div className="space-x-4">
-//             <Link to="/">Home</Link>
-//             <Link to="/recipes">Recipes</Link>
-//             <Link to="/favorites">Favorites</Link>
-//           </div>
-//         </nav>
-//       );
-// }
-
-// function Navbar() {
-//   return (
-//     <nav className="bg-[#540c97] text-white p-4 flex flex-col md:flex-row justify-between items-center shadow-lg">
-//       <h1 className="text-xl md:text-2xl font-extrabold tracking-wide animate-[sparkle_2s_infinite] mb-4 md:mb-0">
-//         😋 Recipe Finder ✨
-//       </h1>
-//       <div className="space-y-4 md:space-y-0 md:space-x-6 flex flex-col md:flex-row items-center">
-//         <Link
-//           to="/"
-//           className="relative hover:underline hover:underline-offset-4 transition-all duration-300 hover:scale-105"
-//         >
-//           Home
-//         </Link>
-//         <Link
-//           to="/recipes"
-//           className="relative hover:underline hover:underline-offset-4 transition-all duration-300 hover:scale-105"
-//         >
-//           Recipes
-//         </Link>
-//         <Link
-//           to="/favorites"
-//           className="relative hover:underline hover:underline-offset-4 transition-all duration-300 hover:scale-105"
-//         >
-//           Favorites
-//         </Link>
-//       </div>
-//     </nav>
-//   );
-// }
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
