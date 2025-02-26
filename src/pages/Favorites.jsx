@@ -117,7 +117,7 @@ const Favorites = () => {
   return (
     <div className='m-2'>
       <Navbar />
-      <div className="p-4 mt-2 border-2 border-solid border-red-500">
+      <div className="p-4 mt-2 border-2 border-solid border-red-500 bg-gradient-to-r from-green-100 to-yellow-100">
         <h1 className="text-2xl font-bold mb-4 text-center text-[#540c97] animate-pulse">💖 Your Favorite Recipes</h1>
         {favorites.length === 0 ? (
           <p className="text-center text-gray-500">No favorite recipes yet. Start adding some!</p>
@@ -134,10 +134,12 @@ const Favorites = () => {
                     alt={recipe.title}
                     className="w-full h-48 object-cover rounded-t-3xl hover:opacity-90 transition-opacity duration-300"
                   />
-                  <div className="p-4 flex items-center justify-between">
-                    <h2 className="text-lg font-semibold text-[#c2185b] flex items-center gap-2">
-                      <GiCook className="text-3xl text-[#ad1457]" /> {recipe.title}
-                    </h2>
+                  <div className="p-4 flex items-center justify-start">
+                    <div><GiCook className="text-3xl text-[#540c97]" /></div>
+                    <div className='ml-4'><h2 className="text-lg font-semibold text-[#540c97] flex items-center gap-2">
+                      {recipe.title}
+                    </h2></div>
+                    
                   </div>
                 </Link>
 

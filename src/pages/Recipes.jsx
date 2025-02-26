@@ -267,7 +267,7 @@ const Recipes = () => {
     async function fetchAllRecipes() {
       try {
         const response = await fetch(
-          `https://api.spoonacular.com/recipes/complexSearch?number=20&apiKey=97bec6b1b7e84bc787a954aeaa080133`
+          `https://api.spoonacular.com/recipes/complexSearch?number=20&apiKey=aeea10cfe46f478ea39730d7a1725cc1`
         );
         const data = await response.json();
         setRecipes(data.results);
@@ -296,7 +296,7 @@ const Recipes = () => {
   return (
     <div className="m-2">
       <Navbar />
-      <div className="p-4 mt-2 border-red-400 border-2 border-solid">
+      <div className="p-4 mt-2 border-red-400 border-2 border-solid bg-gradient-to-r from-green-100 to-yellow-100">
         <h1 className="text-3xl font-bold mb-4 text-center text-[#540c97] animate-pulse">🍳 Delicious Recipes</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {recipes.map((recipe) => (
@@ -310,11 +310,13 @@ const Recipes = () => {
                   alt={recipe.title}
                   className="w-full h-48 object-cover rounded-t-3xl hover:opacity-90 transition-opacity duration-300"
                 />
-                <div className="p-4 flex items-center justify-between">
-                  <h2 className="text-lg font-semibold text-[#540c97] flex items-center gap-2">
-                    <GiCook className="text-3xl text-[#7b1fa2]" /> {recipe.title}
-                  </h2>
-                </div>
+                <div className="p-4 flex items-center justify-start">
+                                                    <div><GiCook className="text-3xl text-[#540c97]" /></div>
+                                                    <div className='ml-4'><h2 className="text-lg font-semibold text-[#540c97] flex items-center gap-2">
+                                                      {recipe.title}
+                                                    </h2></div>
+                                                    
+                                                  </div>
               </Link>
 
               {/* Favorite Icon */}
